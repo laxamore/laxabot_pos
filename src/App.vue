@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Test msg="Elit ad consequat sunt labore duis id cupidatat ea ipsum pariatur laborum mollit. Laborum do eiusmod et magna non velit adipisicing aliqua labore. Ad ea ut et non adipisicing amet sint do quis. Commodo do consequat eu aliquip est labore officia et nostrud laboris esse voluptate."/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Test from './components/Test.vue'
+import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Test
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
